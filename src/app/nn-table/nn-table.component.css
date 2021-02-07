@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.table-container {
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.table-row {
+  position: relative;
+  margin: auto;
+  clear: both;  /* Evita que las columnas de la fila siguiente se suban a la anterior si esta incompleta */
+  display: table; /* Evita que otros componentes como h1 se peguen al final de la fila anterior si esta incompleta */
+}
+
+.table-col {
+  float:left;
+}

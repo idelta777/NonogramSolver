@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'NonogramSolver';
+
+  title = 'Nonogram Solver';
+
+  verifyAmount(e : Event) : void {
+
+
+    if(parseInt((<HTMLInputElement>e.target).value) < 1 ) {
+      alert("El valor debe ser mayor a 1");
+    }
+  }
 }

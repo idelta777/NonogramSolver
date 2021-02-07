@@ -1,0 +1,11 @@
+<div (click)="toggleStatus()" >
+  <div class="element blank" *ngIf="status == BLANK">
+  </div>
+
+  <div class="element filled" *ngIf="status == FILLED">
+  </div>
+
+  <div class="element crossed" *ngIf="status == CROSSED">
+    &times;
+  </div>
+</div>

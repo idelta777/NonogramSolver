@@ -1,0 +1,20 @@
+.element {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  user-select: none
+}
+
+.blank {
+  background: none;
+}
+
+.filled {
+  background: black;
+}
+
+.crossed {
+  background: none;
+}

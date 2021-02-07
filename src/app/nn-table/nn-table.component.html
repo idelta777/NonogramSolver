@@ -1,0 +1,7 @@
+<div class="table-container">
+  <div class="table-row" *ngFor="let item of arrayCustomSize(rows); let i = index">
+    <div class="table-col" *ngFor="let item2 of arrayCustomSize(cols); let j = index">
+      <app-nn-element></app-nn-element>
+    </div>
+  </div>
+</div>
