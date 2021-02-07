@@ -1,11 +1,27 @@
-<div>
-  <label for="columns">Columnas</label>
-  <input id="columns" type="number" max="50" min="1" [(ngModel)]="mainTable.cols" size="1" (change)="verifyAmount($event)" >
-  X
-  <label for="rows">Columnas</label>
-  <input id="rows" type="number" max="50" min="1" [(ngModel)]="mainTable.rows" size="1" (change)="verifyAmount($event)">
-</div>
+<table>
+  <tr>
+    <td>
+      <label for="columns">Columnas </label>
+    </td>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+      <label for="rows">Filas </label>
+    </td>
+  </tr>
 
-Su nonograma es de {{mainTable.cols}} columnas X {{mainTable.rows}} filas.
+  <tr>
+    <td>
+      <input id="columns" type="number" max="50" min="1" [(ngModel)]="mainTable.cols" size="1" (change)="verifyAmount($event)" >
+    </td>
+    <td>
+      &times;
+    </td>
+    <td>
+      <input id="rows" type="number" max="50" min="1" [(ngModel)]="mainTable.rows" size="1" (change)="verifyAmount($event)">
+    </td>
+  </tr>
+</table>
 
 <app-nn-table #mainTable></app-nn-table>

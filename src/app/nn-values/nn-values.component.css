@@ -1,0 +1,10 @@
+.values {
+  width: 20px;
+  height: 20px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  text-align: center;
+  user-select: none;
+  background: lightgrey;
+  border-radius: 100%;
+}
